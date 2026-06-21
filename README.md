@@ -163,6 +163,8 @@ Leave all other settings at their defaults and click **Create queue**.
 
 4. Copy the **Queue URL** and **Queue ARN** for `OrderQueue` — you will need these in later steps.
 
+## Step 2.2 is shown in below 8 pictures
+
 <img width="1917" height="935" alt="image" src="https://github.com/user-attachments/assets/c1f66c25-0fb8-4200-b0ec-02db8cf20f61" />
 <img width="1917" height="932" alt="image" src="https://github.com/user-attachments/assets/f9c708cc-455b-45de-9f3a-7accf015f819" />
 <img width="1917" height="942" alt="image" src="https://github.com/user-attachments/assets/3465979d-91d8-40be-ab59-9f2f2c324fad" />
@@ -174,6 +176,8 @@ Leave all other settings at their defaults and click **Create queue**.
 
 URL : - https://sqs.ap-south-1.amazonaws.com/939365917679/OrderQueue
 ARN : - arn:aws:sqs:ap-south-1:939365917679:OrderQueue
+
+<img width="1917" height="942" alt="image" src="https://github.com/user-attachments/assets/f7165ce6-ea6c-4c80-9698-139445d31385" />
 
 ---
 
