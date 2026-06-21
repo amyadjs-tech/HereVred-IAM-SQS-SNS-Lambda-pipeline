@@ -246,6 +246,16 @@ Click **Create topic**.
 
 2. Copy the **Topic ARN** — you will set this as `ALERT_SNS_TOPIC_ARN` in the Lambda environment variables.
 
+## Step 3.3 is shown in below 5 pictures
+
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/aa64d2e7-a9de-42c8-90d5-6f4bf7eb9463" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/69581b66-aab3-4687-b173-bfbdad70bc99" />
+<img width="1912" height="922" alt="image" src="https://github.com/user-attachments/assets/5d614e94-f56e-46ca-90d4-6e570c9d5fc8" />
+<img width="1917" height="916" alt="image" src="https://github.com/user-attachments/assets/6f383b44-c3cd-4c14-8988-59c7b5d341c0" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/307cb1ee-26ec-4e3a-8328-ec88ca015866" />
+
+## ARN :- arn:aws:sns:ap-south-1:939365917679:OrderAlerts
+
 ---
 
 ## 3.3 Subscribe Your Email to OrderAlerts
@@ -261,9 +271,18 @@ This gives you real-time visibility into every success and failure the Lambda pr
 
 Click **Create subscription**.
 
+## Step 3.3 is shown in below 3 pictures
+
+<img width="1917" height="935" alt="image" src="https://github.com/user-attachments/assets/72c07d3a-f2b5-49cb-9565-e44dfd8dea82" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/891e6983-f25e-45ef-8a2c-293a1d615ad3" />
+
+
 2. Check your inbox for a confirmation email from AWS and click **Confirm subscription**.
 
+<img width="1901" height="962" alt="image" src="https://github.com/user-attachments/assets/ab49ac93-fe92-463a-86b4-3a3e45c2a6a3" />
+
 > You will not receive any alerts until you confirm. Check your spam folder if it does not arrive within a minute.
+
 
 ---
 
