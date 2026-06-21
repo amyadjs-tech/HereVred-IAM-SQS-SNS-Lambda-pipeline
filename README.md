@@ -102,3 +102,75 @@ You will paste this ARN when creating the Lambda function in Step 4.
 `AWSLambdaSQSQueueExecutionRole` already includes the `logs:CreateLogGroup`, `logs:CreateLogStream`, and `logs:PutLogEvents` permissions that Lambda needs to write to CloudWatch. No extra policy is needed.
 
 ---
+
+# Step 2 — SQS: Create OrderQueue and Dead-Letter Queue
+
+You will create two queues:
+- **OrderDLQ** — receives messages that Lambda fails to process after several attempts
+- **OrderQueue** — the main inbound queue; Lambda is triggered by messages here
+
+Create the DLQ first because the main queue references it.
+
+---
+
+## 2.1 Create the Dead-Letter Queue (OrderDLQ)
+
+1. In the AWS Console, search for **SQS** and open it.
+2. Click **Create queue**.
+
+| Field | Value |
+|-------|-------|
+| Type | Standard |
+| Name | `OrderDLQ` |
+
+Leave all other settings at their defaults and click **Create queue**.
+
+3. Copy the **Queue ARN** for `OrderDLQ` — you will need it in the next section.
+
+## Step 2.1 is shown in below 7 pictures
+
+<img width="1917" height="932" alt="image" src="https://github.com/user-attachments/assets/1c24eca8-034a-4740-bb1d-2113e47f36b3" />
+<img width="1917" height="935" alt="image" src="https://github.com/user-attachments/assets/ad074938-8968-4878-8c22-1a4f7f07d47e" />
+<img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/1b107b15-64bc-4ae0-a7dd-eb3d786f17e4" />
+<img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/294fe683-f355-412a-981b-8971be3ebacd" />
+<img width="1917" height="932" alt="image" src="https://github.com/user-attachments/assets/1fbed925-296c-4c46-9633-d0c7e88f3c20" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/b057b9b5-c0b4-4942-9099-12c1173cef9a" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/3c770b51-ba39-4df0-a7cc-1005b883fc9d" />
+
+---
+
+## 2.2 Create the Main Queue (OrderQueue)
+
+1. Click **Create queue** again.
+
+| Field | Value |
+|-------|-------|
+| Type | Standard |
+| Name | `OrderQueue` |
+
+2. Scroll down to **Dead-letter queue** and expand it.
+
+| Field | Value |
+|-------|-------|
+| Dead-letter queue | **Enabled** |
+| Choose queue | `OrderDLQ` (paste the ARN you copied) |
+| Maximum receives | `3` |
+
+> **Maximum receives = 3** means: if the same message is received and not deleted 3 times (Lambda threw an exception each time), SQS moves it to the DLQ automatically.
+
+3. Leave all other settings at defaults. Click **Create queue**.
+
+4. Copy the **Queue URL** and **Queue ARN** for `OrderQueue` — you will need these in later steps.
+
+---
+
+## What You Created
+
+```
+OrderQueue (Standard)
+  └── Dead-letter queue → OrderDLQ (maxReceiveCount: 3)
+```
+
+When Lambda fails to process a message 3 times, SQS automatically moves it to `OrderDLQ` so it isn't lost and can be investigated.
+
+---
