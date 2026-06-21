@@ -305,14 +305,17 @@ Click **Save changes**. Now your email only receives `FAILED` alerts; `SUCCESS` 
 
 > The `status` attribute is set by the Lambda function in `MessageAttributes` — `SUCCESS` or `FAILED` — so SNS can route them differently per subscriber.
 
-## Step 3.4 is shown in below 3 pictures
+## Step 3.4 is shown in below 9 pictures
 
 <img width="1917" height="962" alt="image" src="https://github.com/user-attachments/assets/a4f1f18e-0bac-4a9d-9b0c-604b9895e366" />
 <img width="1912" height="917" alt="image" src="https://github.com/user-attachments/assets/f3f47ca3-87f9-46e9-b9de-14280bb5b02a" />
 <img width="1917" height="925" alt="image" src="https://github.com/user-attachments/assets/26eb480c-f9c5-4648-a82a-53b7ae999ecb" />
-
-
-
+<img width="1917" height="931" alt="image" src="https://github.com/user-attachments/assets/ecb96eb3-1fc0-4da5-8e92-585b7d374f60" />
+<img width="1907" height="926" alt="image" src="https://github.com/user-attachments/assets/4869189a-7112-4f92-8f3d-bc0c4b2c0c5d" />
+<img width="1917" height="937" alt="image" src="https://github.com/user-attachments/assets/5413e817-ed56-4810-a080-9b77fa6ea991" />
+<img width="1912" height="917" alt="image" src="https://github.com/user-attachments/assets/d760af1a-e064-4918-9237-cb2e7e4956f1" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/acd32639-1505-4a38-a639-3d35c045f659" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/b8662e69-2b1f-4440-a29b-dc84a1c93c71" />
 
 ---
 
@@ -328,6 +331,16 @@ This lets you see the business notification that downstream services would recei
 | Endpoint | your email address |
 
 Click **Create subscription** and confirm from your inbox.
+
+## Step 3.5 is shown in below 7 pictures
+
+<img width="1915" height="932" alt="image" src="https://github.com/user-attachments/assets/d6ba1553-ed88-4ab8-97e8-7f0ddae761d3" />
+<img width="1917" height="921" alt="image" src="https://github.com/user-attachments/assets/64501003-e3e8-42b4-9152-494370daaae7" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/5827b5e2-ce79-47a3-b585-175823d7b472" />
+<img width="1917" height="932" alt="image" src="https://github.com/user-attachments/assets/7c4a4bf6-1659-46d5-88e0-eb552031e75b" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/543ddfdc-88bd-4e4f-b0a6-bf00335db86e" />
+<img width="1917" height="952" alt="image" src="https://github.com/user-attachments/assets/84c1f8bf-a210-44b0-8a31-dfaf41d0b757" />
+<img width="1917" height="962" alt="image" src="https://github.com/user-attachments/assets/cf529ce3-779b-4c2b-9a68-949cfda3e615" />
 
 ---
 
@@ -346,6 +359,17 @@ Click **Create queue**.
 
 2. Copy the **Queue ARN** for `ProcessedOrders`.
 
+## Step 3.6 is shown in below 7 pictures
+
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/1e131a8d-7c07-4db0-b1e1-a8696e5730fe" />
+<img width="1917" height="931" alt="image" src="https://github.com/user-attachments/assets/1c4a3d29-3818-40f9-88e8-8c6955449e64" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/88c290ab-0a29-4069-9d97-ad2194c4dab2" />
+<img width="1915" height="925" alt="image" src="https://github.com/user-attachments/assets/06126fd7-376c-482a-a074-744e7e6611dd" />
+<img width="1917" height="926" alt="image" src="https://github.com/user-attachments/assets/f10d5eb5-45ae-49a9-951c-6bf095e28f37" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/dc8afbfd-e45b-491b-a1f5-094f30407ee7" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/7c452a4d-d792-4050-890f-e7c6b46a113a" />
+
+## ARN :- arn:aws:sqs:ap-south-1:939365917679:ProcessedOrders
 ---
 
 ## 3.7 Subscribe ProcessedOrders Queue to OrderNotifications
@@ -358,6 +382,13 @@ Click **Create queue**.
 | Endpoint | ARN of `ProcessedOrders` |
 
 Click **Create subscription**.
+
+## Step 3.7 is shown in below 4 pictures
+
+<img width="1917" height="931" alt="image" src="https://github.com/user-attachments/assets/c0cc4261-c07c-4a58-b6d3-ec233f61d31f" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/339953e2-6f21-4134-9131-37f4961249f9" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/ed1dda1a-671a-4482-9406-52284dbb5c8c" />
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/4d9e8231-8c1d-4dfc-85a9-249ae6ecb059" />
 
 ---
 
@@ -391,6 +422,23 @@ SNS must be allowed to send messages to the `ProcessedOrders` queue.
 ```
 
 Click **Save**.
+
+<img width="1911" height="921" alt="image" src="https://github.com/user-attachments/assets/126f587d-56f7-47cc-ab7c-432abbdb9bc3" />
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/5188cf23-5f76-4df2-986f-47d3f35aecd3" />
+<img width="1917" height="920" alt="image" src="https://github.com/user-attachments/assets/6a203425-7911-4a46-a35b-50026bde9978" />
+<img width="1915" height="930" alt="image" src="https://github.com/user-attachments/assets/5c2caa34-a230-4678-b681-ae526a96532b" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/d85b58b0-368e-4eb8-b7cc-ca3412f02918" />
+<img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/eebb5e93-3948-4f0f-a0f8-fd80da152d05" />
+<img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/217ee335-afef-4f81-9316-b12af809aa63" />
+
+
+
+
+
+
+
+
+
 
 ---
 
