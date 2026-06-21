@@ -280,6 +280,8 @@ Click **Create subscription**.
 2. Check your inbox for a confirmation email from AWS and click **Confirm subscription**.
 
 <img width="1901" height="962" alt="image" src="https://github.com/user-attachments/assets/ab49ac93-fe92-463a-86b4-3a3e45c2a6a3" />
+<img width="1917" height="952" alt="image" src="https://github.com/user-attachments/assets/f55a9b27-46d7-4be5-801e-e05af72e107c" />
+
 
 > You will not receive any alerts until you confirm. Check your spam folder if it does not arrive within a minute.
 
@@ -302,6 +304,15 @@ If you only want to receive failure emails — not one for every successful orde
 Click **Save changes**. Now your email only receives `FAILED` alerts; `SUCCESS` alerts are still published but filtered out for this subscriber.
 
 > The `status` attribute is set by the Lambda function in `MessageAttributes` — `SUCCESS` or `FAILED` — so SNS can route them differently per subscriber.
+
+## Step 3.4 is shown in below 3 pictures
+
+<img width="1917" height="962" alt="image" src="https://github.com/user-attachments/assets/a4f1f18e-0bac-4a9d-9b0c-604b9895e366" />
+<img width="1912" height="917" alt="image" src="https://github.com/user-attachments/assets/f3f47ca3-87f9-46e9-b9de-14280bb5b02a" />
+<img width="1917" height="925" alt="image" src="https://github.com/user-attachments/assets/26eb480c-f9c5-4648-a82a-53b7ae999ecb" />
+
+
+
 
 ---
 
