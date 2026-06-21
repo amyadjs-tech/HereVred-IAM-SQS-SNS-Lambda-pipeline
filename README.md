@@ -423,6 +423,8 @@ SNS must be allowed to send messages to the `ProcessedOrders` queue.
 
 Click **Save**.
 
+## Step 3.8 is shown in below 8 pictures
+
 <img width="1911" height="921" alt="image" src="https://github.com/user-attachments/assets/126f587d-56f7-47cc-ab7c-432abbdb9bc3" />
 <img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/5188cf23-5f76-4df2-986f-47d3f35aecd3" />
 <img width="1917" height="920" alt="image" src="https://github.com/user-attachments/assets/6a203425-7911-4a46-a35b-50026bde9978" />
@@ -430,15 +432,7 @@ Click **Save**.
 <img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/d85b58b0-368e-4eb8-b7cc-ca3412f02918" />
 <img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/eebb5e93-3948-4f0f-a0f8-fd80da152d05" />
 <img width="1917" height="936" alt="image" src="https://github.com/user-attachments/assets/217ee335-afef-4f81-9316-b12af809aa63" />
-
-
-
-
-
-
-
-
-
+<img width="1917" height="917" alt="image" src="https://github.com/user-attachments/assets/4b1096fd-f6ee-4c59-a818-d5bd573f6d30" />
 
 ---
 
