@@ -68,9 +68,13 @@ Click **Next**.
 
 Click **Create role**.
 
+## Step 1.4 is shown in below 3 pictures
 
+<img width="1917" height="922" alt="image" src="https://github.com/user-attachments/assets/c7134cda-8224-4665-92d3-d9b1f52bcd91" />
 
+<img width="1917" height="921" alt="image" src="https://github.com/user-attachments/assets/bec00cee-bc6a-4a47-b3f2-b87854c29b54" />
 
+<img width="1917" height="920" alt="image" src="https://github.com/user-attachments/assets/1f53b7fa-e463-4306-a30e-0070c8f3a704" />
 
 ---
 
@@ -80,6 +84,16 @@ Click **Create role**.
 2. Copy the **ARN** (looks like `arn:aws:iam::123456789012:role/OrderProcessorLambdaRole`).
 
 You will paste this ARN when creating the Lambda function in Step 4.
+
+## Step 1.5 is shown in below 2 pictures
+
+<img width="1917" height="955" alt="image" src="https://github.com/user-attachments/assets/2fffec8f-af9c-4b74-b84e-7ac136c8fff2" />
+
+## Click on View role you will get the below page where you can copy the ARN
+
+<img width="1917" height="927" alt="image" src="https://github.com/user-attachments/assets/e7220760-fc47-469b-8c95-068e3a0c3a0c" />
+
+## ARN : arn:aws:iam::939365917679:role/OrderProcessorLambdaRole
 
 ---
 
