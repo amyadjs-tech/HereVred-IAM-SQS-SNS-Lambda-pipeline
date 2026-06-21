@@ -52,6 +52,11 @@ Search for and attach these two AWS managed policies:
 
 Click **Next**.
 
+## Step 1.3 is shown in below 2 pictures
+
+<img width="1917" height="926" alt="image" src="https://github.com/user-attachments/assets/35a8e838-430b-4759-a2a5-e835e5fa45e2" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/f5daf987-7ff1-4700-8257-a178e273697d" />
+
 ---
 
 ## 1.4 Name the Role
@@ -62,6 +67,10 @@ Click **Next**.
 | Description | `Execution role for OrderProcessor Lambda — SQS trigger + SNS publish` |
 
 Click **Create role**.
+
+
+
+
 
 ---
 
